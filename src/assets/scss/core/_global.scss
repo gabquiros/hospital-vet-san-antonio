@@ -1,0 +1,92 @@
+//
+// Global styles
+// --------------------------------------------------
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+	background-color: $primary-background-color;
+	overflow: scroll;
+	background-repeat: no-repeat;
+	background-color: $primary-background-color;
+	background-size: 100% auto;
+
+
+
+	#main-container{
+		position: relative;
+		height: $page-height;
+		margin: 0px auto 0;
+
+		@include breakpoint(phone) {
+			margin: 0;
+		}
+	}
+
+	.header-logos{
+		float: none;
+		margin-top: 20px;
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.main-title {
+	text-align: center;
+}
+
+.title-icon {
+	display: inline-block;
+}
+
+.row-eq-height {
+	display: flex;
+}
+
+@media (min-width: 992px) {
+  .page-container {
+    margin-top: 50px;
+  }
+}
+
+sup {
+	font-size: 50%;
+	top: -1.0em;
+
+  &.normal-size {
+    font-size: 100%;
+    top: 0em;
+  }
+}
+
+.grey-background {
+  background-color: #f7f7f7;
+}
+
+.error-page {
+	.content {
+		text-align: center;
+		padding-bottom: 50px;
+
+		h2 {
+			font-size: 25em;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		a {
+			font-size: 16px;
+		}
+
+
+		@media (max-width: 640px) { 
+				font-size: 50%;
+		}
+	}
+}

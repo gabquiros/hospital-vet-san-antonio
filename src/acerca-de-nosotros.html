@@ -1,0 +1,97 @@
+---
+
+layout: default
+title: Acerca de nosotros
+navActive: 'about'
+
+values: 
+  - title: 'Pasión'
+    text: 'Somos apasionados con lo que hacemos y nuestros pacientes son nuestro motor día&nbsp;a&nbsp;día'
+    img: 'pasion.jpg'
+  - title: 'Responsabilidad'
+    text: 'Toda consulta que atendamos será con su debida dedicación y tiempo, por lo cual nos destacamos por el cuidado al tomar decisiones, al realizar algo o ser responsable de nuestros pacientes a la hora de atenderlos'
+    img: 'responsabilidad.jpg'
+  - title: 'Trabajo en equipo '
+    text: 'Somos un equipo de personas que nos organizamos de forma determinada para sobre llevar las situaciones de la mejor manerarutrum eu. Curabitur blandit sollicitudin velit et accumsan. Fusce luctus nunc in mi tincidunt aliquam. In hac habitasse platea dictumst. '
+    img: 'team.jpg'
+  - title: 'Compromiso'
+    text: '’Nos distinguimos por siempre dar lo mejor de nosotros mismos, para brindarles la mejor atención dando el servicio necesario'
+    img: 'compromiso.jpg'
+
+---
+<section class="info-panel right">
+  <div class="row no-gutter row-eq-height">
+    <div class="col-sm-5 col-sm-push-7 col-xs-12">
+      <img class="info-img" src="/assets/images/about/history.jpg" alt="info image">
+    </div>     
+    <div class="col-sm-7 col-xs-12 col-sm-pull-5 info-text-cont">
+      <div class="info-cont-center">
+        <div class="info-content">
+          <h2 class="inverted">Historia</h2>
+          <p>Hospital Veterinario San Antonio inicia con la intención de mejorar los servicios veterinarios en Costa Rica, no sólo en la parte de medicina sino también el trato y la importancia que le damos a nuestros pacientes y sus dueños.</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+<section class="mission-vision">
+  <div class="row row-eq-height">
+    <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12 mision">
+      <div class="main-title">
+        <div class="title-icon">
+          <svg class="icon" width="34px" height="27.33px" viewBox="0 0 34 27.33"><use xlink:href="#mision-icon"></use></svg>
+        </div>
+        <h2>MISIÓN</h2>
+      </div>
+      <p class="ms-text">Somos un hospital veterinario capacitado para la atención de nuestros pacientes, buscamos conciencia, acción y protección a los animales con nuestros servicios las 24 horas del día y los 365 días del año. Estamos comprometidos a mejorar e innovar la Medicina Veterinaria de Costa Rica.</p>                    
+    </div>
+    <div class="col-md-5 col-sm-6 col-xs-12">
+      <div class="main-title">
+        <div class="title-icon">
+          <svg class="icon" width="29px" height="27.33px" viewBox="0 0 29 27.33"><use xlink:href="#vision-icon"></use></svg>
+        </div>
+        <h2>VISIÓN</h2>
+      </div>
+      <p class="ms-text">Ser el hospital veterinario lider en Costa Rica que brinda una atención integral con el uso de tecnología de punta y un servicio de calidad que nos permita lograr la satisfacción de los pacientes, su familia y la sociedad.</p>         
+    </div>
+  </div>
+</section>
+<section class="slogan">
+  <div class="row">
+    <div class="col-md-12 slogan-container">
+      <div class="slogan-text-container">
+        <p class="slogan-pretext">Nuestro slogan</p>
+        <p class="slogan-text">"Porque sabemos que ellos harían lo mismo por nosotros"</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="values">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">      
+      <div class="row">      
+        <div class="col-xs-12">
+          <div class="main-title">
+            <div class="title-icon">
+              <svg class="icon" width="29px" height="32.822px" viewBox="0 0 29 32.822">
+                <use xlink:href="#values-icon"></use>
+              </svg>
+            </div>
+            <h2>VALORES</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {% for item in page.values %}
+        <div class="col-md-3 col-sm-6 col-xs-12 value-item">
+          <img class="info-img" src="/assets/images/about/{{item.img}}" alt="{{item.title}}">
+          <div class="value-item-text">
+            <h4>{{item.title}}</h4>
+            <p>{{item.text}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

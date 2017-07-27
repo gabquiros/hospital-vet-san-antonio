@@ -1,0 +1,45 @@
+<div class="main-nav">
+  <div class="container">
+    <div class="row row-eq-height">
+      <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-xs-6 twetyfour-cont col-md-push-3 col-sm-push-3">
+        <svg class="icon"><use xlink:href="#24h"></use></svg>
+      </div> 
+      <div class="col-lg-3 col-lg-offset-1 col-lg-push-3 col-md-4 col-md-push-3 col-sm-4 col-xs-6 call-cont col-sm-push-3"> 
+        <a href="tel:+50622393979">Llámenos 2239-3979</a>
+      </div>
+      <div class="nav-logo-container col-md-3 col-xs-12 col-md-pull-9 col-sm-3 col-sm-pull-9">
+        <a href="/index.html">
+          <svg class="icon logo"><use xlink:href="#logo"></use></svg>
+        </a>
+      </div>      
+    </div>
+    <div class="row no-gutter">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+        <nav class="navbar navbar-main">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li {% if page.navActive == 'home' %}class="active"{% endif %}><a href="/">Inicio</a></li>
+                <li {% if page.navActive == 'about' %}class="active"{% endif %}><a href="/acerca-de-nosotros.html">Acerca de nosotros</a></li>
+                <li {% if page.navActive == 'personel' %}class="active"{% endif %}><a href="/personal.html">Personal</a></li>
+                <li {% if page.navActive == 'services' %}class="active"{% endif %}><a href="/servicios.html">Servicios</a></li>
+                <li {% if page.navActive == 'contact' %}class="active"{% endif %}><a href="/contacto.html">Contacto</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

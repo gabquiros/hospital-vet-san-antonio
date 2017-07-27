@@ -1,0 +1,21 @@
+//
+// Typography
+// --------------------------------------------------
+$font-url:        "../fonts";
+
+//DINNextLTPro-Regular
+@include fontFace('DINNextLTProRegular');
+//DINNextLTPro-Medium
+@include fontFace('DINNextLTProMedium');
+//DINNextLTPro-Bold
+@include fontFace('DINNextLTProBold');
+//DINNextLTPro-Light
+@include fontFace('DINNextLTProLight');
+//DINNextLTPro-Light-Italic
+@include fontFace('DINNextLTProLightItalic');
+//DINNextLTPro-Heavy
+@include fontFace('DINNextLTProHeavy');
+//TrajanPro3-Regular
+@include fontFace('TrajanPro3-Regular');
+//TrajanPro3-Bold
+@include fontFace('TrajanPro3-Bold');

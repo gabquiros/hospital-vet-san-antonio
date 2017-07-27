@@ -1,0 +1,84 @@
+// Typo
+// -------------------------
+h1{
+	font-family: $primary-font;
+	font-size: 44px;
+	line-height: 48px;
+	color: $primary-header-color;
+}
+
+h2 {
+	font-family: $primary-font;
+	color: $secondary-theme-color;
+	font-weight: 700;
+	font-size: em(34,14);
+	margin-top: em(1,34);
+
+	&.inverted {
+		color: #ffffff;
+	}
+}
+
+h3{
+	font-family: $primary-font;
+	font-size: em(30,14);
+	line-height: 1.2em;
+	font-weight: 700;
+	color: $secondary-theme-color;
+	margin: 0;
+}
+
+h4{
+	font-family: $primary-font;
+	font-size: em(20,14);
+	line-height: 1.2em;
+	font-weight: 700;
+	color: $secondary-theme-color;
+	margin: 0;
+}
+
+h5{
+	font-family: $primary-font;
+	font-size: 18px;
+	line-height: 29px;
+	font-weight: 800;
+	color: $tertiary-theme-color;
+}
+
+p{
+	font-family: $primary-font;
+	font-size: 12px;
+	line-height: 1.2em;
+	font-weight: 300;
+	color: $tertiary-theme-color;
+}
+
+a {
+	color: $secondary-theme-color;
+	font-family: $primary-font;
+
+	&:hover, &:active {
+		color: $secondary-theme-color;
+	}
+}
+
+input {
+	font-family: $primary-font;
+}
+
+label {
+	font-family: $primary-font;
+}
+
+.capitalize {
+	text-transform: uppercase;
+}
+.bolden {
+	font-weight: 600;
+}
+.light-bold {
+	font-weight: 400;
+}
+.italic {
+	font-style: italic;
+}

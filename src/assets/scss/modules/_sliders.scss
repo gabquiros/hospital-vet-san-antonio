@@ -1,0 +1,150 @@
+//hero slider
+.hero-slider {
+	.home-slider-slide {
+		position: absolute;
+		top: 0;
+
+		.main-slide-img {
+			width: 100%;
+		}
+
+		&:first-child {
+			position: relative;
+			z-index: 1;
+		}
+
+		&.slick-slide {
+			position: static;
+		}
+	}
+
+	.slick-slide {
+		.main-slide-img {
+			width: 100%;
+		}
+	}
+
+	.slick-dots {
+		list-style: none;
+		left: 50%;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		transform: translateX(-50%);
+		bottom: em(16,14);
+
+		li {
+			float: left;
+			margin: 0 em(6,14);
+		}
+
+		button {
+			background-color: transparent;
+			border: 2px solid #ffffff;
+			height: 16px;
+			text-indent: -99999px;
+			width: 14px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.slick-active {
+			button {
+				background-color: $secondary-theme-color;
+			}
+		}
+	}
+}
+
+.multiple-slider {
+	.item-link {
+		color: $tertiary-theme-color;
+		text-decoration: none;
+		font-size: em(19,14);
+		text-transform: uppercase;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $secondary-theme-color;
+
+			.item-label:before {
+				background-color: $secondary-theme-color;
+				transition: all 0.3s;
+			}
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		img {
+			margin: 0 auto;
+			width: 90%;
+		}
+	}
+
+	.multiple-slider-slide {
+		img {
+			opacity: 0;
+		} 
+
+		&.slick-slide {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+
+	.item-label {
+		display: block;
+		text-align: center;
+		margin-top: em(7,19);
+
+		&:before {
+			background-color: $tertiary-theme-color;
+			margin: 0 auto em(6,18);
+			content: '';
+			display: block;
+			height: 2px;
+			width: 80%;
+		}		
+	}
+
+	.slick-arrow {
+		text-indent: 999999px;
+		background-color: transparent;
+		border: 0;
+		font-size: 0;
+		height: 53px;
+		position: absolute;
+		width: 21px;
+		display: block;
+		padding: 0;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+	
+	.slick-prev {
+		left: -10%;
+		background: url(../images/global/arrows.png) no-repeat 0 0;
+		@media (max-width: $screen-xs) {
+			left: -20%;
+		}
+	}
+
+	.slick-next {
+		background: url(../images/global/arrows.png) no-repeat -29px 0;
+		right: -10%;
+
+		@media (max-width: $screen-xs) {
+			right: -20%;
+		}		
+	}
+}

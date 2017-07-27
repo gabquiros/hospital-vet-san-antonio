@@ -1,0 +1,25 @@
+{
+  "name": "hospital_san_antonio",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "bootstrap-sass": "~3.3.5",
+    "jquery": "~2.1.1",
+    "bootstrap-validator": "^0.11.5",
+    "font-awesome": "fontawesome#^4.7.0",
+    "components-font-awesome": "^4.7.0",
+    "axios": "^0.15.3",
+    "calculate-size": "^0.1.0",
+    "slick-carousel": "^1.6.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": []
+    },
+    "calculate-size": {
+      "main": [
+        "./src/calculate-size.js"
+      ]
+    }
+  }
+}

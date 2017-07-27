@@ -1,0 +1,169 @@
+.main-nav {
+	padding-top: em(30,14);
+
+	@media (max-width: $tablet-breakpoint) {
+		padding-top: em(15,14);
+	}
+
+	.logo {
+		width: 100%;
+		height: em(96,14);
+
+		@media (max-width: $tablet-breakpoint) {
+			height: em(100,14);
+		}
+	}
+
+	.nav-logo-container {
+		a {
+			display: block;
+
+			@media (max-width: $tablet-breakpoint) {
+				text-align: center;
+			}
+		}
+	}
+
+	.twetyfour-cont {
+		text-align: center;
+		
+		svg {
+			margin-top: em(25,14);
+			width: 80%; 
+			height: em(47,14);
+
+			@media (max-width: $tablet-breakpoint) {
+				width: em(130,14);
+				margin-top: 0;
+				height: em(37,14);
+			}
+		}
+	}
+
+	.call-cont {
+		text-align: center;
+		
+		@media (max-width: $tablet-breakpoint) {
+			font-size: 56%;
+		}
+
+		> a {
+			color: $primary-theme-color;
+			display: inline-block;
+			font-size: em(24,14);
+			font-family: $primary-font;
+			font-weight: 400;
+			margin-top: 10%;
+
+			@media (max-width: $tablet-breakpoint) {
+				margin-top: em(6,14);
+			}
+		}
+	}
+
+	.navbar-header {
+		@media (max-width: $tablet-breakpoint) {
+			text-align: center;
+
+			.navbar-toggle {
+				float: none;
+				background-color: $secondary-theme-color;
+				margin-right: 0;
+				
+				.icon-bar {
+					background-color: #ffffff;
+				}
+			}
+		}
+	}
+
+	#main-navbar-collapse {
+		padding: 0 em(30,14);
+
+		@media (max-width: $tablet-breakpoint) {
+			background-color: $secondary-theme-color;
+			width: 100%;
+			position: absolute;
+		}
+	}
+
+	.navbar-main {
+		background-color: $secondary-theme-color;
+		border-radius: 0;
+		margin-bottom: 0;
+		margin-top: em(30,14);
+		position: relative;
+		z-index: 10;
+
+		@media (max-width: $tablet-breakpoint) {
+			background-color: transparent;
+			margin-top: em(2,14);
+		}
+
+		li {
+			background-color: transparent;
+		}
+
+		a {
+			color: #ffffff;
+			font-family: $secondary-font;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding-left: em(21,14);
+			padding-right: em(21,14);
+			position: relative;
+			background-color: transparent;
+
+			@media (max-width: $tablet-breakpoint) {
+				text-align: center;
+			}
+
+				&:after {
+					background-color: #ffffff;
+					bottom: 0px;
+					content: "";
+					display: block;
+					height: 2px;
+					left: 50%;
+					position: absolute;
+					transform: translateX(-50%);
+					width: 25%;
+					opacity: 0;
+					transition: all 0.2s;
+
+					@media (max-width: $screen-xs) {
+						width: 10%;
+					}
+				}
+
+				&:visited, &:focus {
+					background-color: transparent;
+				}
+
+				&:hover {
+					background-color: transparent;
+					&:after {
+						opacity: 0.5;
+						bottom: 20%;
+						pointer-events: all;
+					}
+				}			
+		}
+
+		.active {
+			a {
+				&:after {
+					opacity: 1;
+					bottom: 20%;
+					pointer-events: all;
+				}
+			}
+		}
+	}
+
+	.row-eq-height {
+		@media (max-width: $tablet-breakpoint) {
+			display: block;
+		}
+	}
+}

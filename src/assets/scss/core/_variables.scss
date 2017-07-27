@@ -1,0 +1,80 @@
+//
+// Global variables
+// --------------------------------------------------
+
+$prefix: 'copay';
+// .#{$prefix}-p   = page
+// .#{$prefix}-m   = module
+// .#{$prefix}-h   = helper
+// .#{$prefix}-mix = mixin
+// .#{$prefix}-is  = state
+// .#{$prefix}-f   = function
+
+// $slick-font-family: "DINWebPro";
+$slick-font-path: "../fonts/";
+// $slick-loader-path: "../";
+
+$page-width: 100%;
+$page-height: 100%;
+
+$tablet-breakpoint: 767px;
+
+$primary-background-color: #FFFFFF;
+$primary-inverted-color: #FFFFFF;
+$secondary-background-color: #b9b9b9;
+$primary-theme-color: #6edbd5;
+$secondary-theme-color: #407cca;
+$tertiary-theme-color: #989898;
+$quaternary-theme-color: #b1b1b1;
+$quinary-theme-color: #a6192e;
+$senary-theme-color: #003087;
+
+$secondary-theme-text-color: #58595b;
+$tertiary-theme-text-color: #002f86;
+$quaternary-theme-text-color: #5c564f;
+
+$font-color: #666666;
+
+$header-color: #F7F4F0;
+$footer-color: #f7f7f7;
+$primary-header-color: #a6192e;
+$secondary-header-color: #003087;
+$tertiary-header-color: #003087;
+$nav-menu-color: #f7f4f3;
+$active-menu-color: #ECECEC;
+$mobile-menu-color: #8a1538;
+$mobile-menu-selected-color: #a6192e;
+$table-header-background-color: #901235;
+$table-body-background-color: #e6e2e0;
+$table-borders: #86776f;
+$form-error: #990033;
+
+$primary-font: 'Asap', sans-serif;;
+$secondary-font: 'Helvetica', Arial, sans-serif;
+
+
+$browser-context: 12;
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}

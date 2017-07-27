@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+    {% include svgs.html %}
+    
+  	{% include header.html %}
+  	<div class="container-fluid">
+	  	<div class="row">
+		  	<div id="main-container" class="col-xs-12 center {{page.navActive}}">
+
+			    {{ content }}
+
+		  	</div>
+	  	</div>
+  	</div>
+
+
+  {% include leaving-site-modal.html %}
+  {% include footer.html %}
+
+  {% include scripts.html %}
+
+  </body>
+</html>

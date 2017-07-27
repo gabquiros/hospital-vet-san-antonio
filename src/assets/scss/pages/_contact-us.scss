@@ -1,0 +1,67 @@
+.contact {
+  .main-title {
+    margin-top: em(40,14);
+    margin-bottom: em(80,14);
+  }
+
+  .contact-cont {
+    margin-bottom: em(70,14);   
+  }
+
+  .info-item {
+    margin-top: em(20,14);
+    overflow: hidden;
+
+    span,i {
+      float: left;
+    }
+
+    i {
+      color: $secondary-theme-color;
+      margin-right: 1em;
+    }
+
+    span {
+      width: 90%;
+    } 
+  }
+
+  .open24h {
+    margin: em(20,14) 0 em(30,14);
+
+    @media (max-width: 370px) {
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .facebook-feed {
+    text-align: right;
+
+    @media (max-width: $screen-sm) {
+      text-align: center;
+      margin-top: em(30,14);
+    }
+  }
+
+  .social-info {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: em(20,14) 0 0;
+    }
+
+    li {
+      padding: 0;
+      display: inline-block;
+      margin-right: em(20,14);
+
+      i {
+        color: $primary-theme-color;
+        font-size: em(22,14);
+
+      }
+    }
+  }
+}

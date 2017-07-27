@@ -1,0 +1,57 @@
+.main-footer {
+	background-color: $secondary-theme-color;
+	color: #ffffff;
+	padding-top: em(12,14);
+	padding-bottom: em(12,14);
+
+	a, p {
+		font-family: $secondary-font;
+		color: #ffffff;		
+		margin: 0;
+	}
+
+	a {
+		font-size: em(14,14);
+
+		@media (max-width: $screen-sm) {
+			text-align: center;
+			font-size: em(12,14);
+			display: block;
+		}		
+	}
+
+	p {
+		font-size: em(12,14);
+		text-align: right;
+		@media (max-width: $screen-sm) {
+			text-align: center;
+			font-size: em(11,14);
+		}
+	}
+
+	.row-eq-height {
+		 align-items: center;
+  	justify-content: center;
+ 
+  	@media (max-width: $screen-md) { 
+  		display: block;
+  		font-size: 90%;
+  	}
+ 
+  	@media (max-width: $screen-sm) { 
+  		font-size: 100%;
+  	}
+	}
+
+	.social-media {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			padding: 0 em(9,14);
+		}
+	}
+}

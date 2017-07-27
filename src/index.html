@@ -1,0 +1,81 @@
+---
+
+layout: default
+title: Hospital Veterinario San Antonio
+navActive: 'home'
+services: 
+  - label: 'CONSULTAS<br/>&nbsp;'
+    img: 'consult.png'
+  - label: 'RAYOS X<br/>&nbsp;'
+    img: 'xray.png'
+  - label: 'ULTRASONIDO<br/>&nbsp;'
+    img: 'ultrasound.png'
+  - label: 'LABORAORIO<br/>&nbsp;'
+    img: 'lab.png'
+  - label: 'LIMPIEZAS<br/>DENTALES'
+    img: 'dental.png'
+  - label: 'ENDOSCOPIAS<br/>&nbsp;'
+    img: 'endoscope.png'
+  - label: 'CIRUGÍAS<br/>ELECTIVAS'
+    img: 'surgery.png'
+  - label: 'AISLAMIENTO DE<br/>INFECCIOSOS'
+    img: 'infeccious.png'
+  - label: 'ATENCIÓN DE<br/>EMERGENCIAS'
+    img: 'emergency.png'
+  - label: 'FARMACIA<br/>&nbsp;'
+    img: 'pharmacy.png'
+  - label: 'PETSHOP<br/>&nbsp;'
+    img: 'petshop.png'
+  - label: 'GROOMING<br/>&nbsp;'
+    img: 'grooming.png'
+---
+
+<div id="homepage">
+  {% include hero/home-page-hero.html %}
+  <section class="services">
+  	<div class="container">  		
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="main-title">
+						<div class="title-icon">
+							<svg class="icon" viewBox="0 0 30 25.81" width="30px" height="25px"><use xlink:href="#service-icon"></use></svg>
+						</div>
+						<h2>Servicios</h2>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+					<div class="multiple-slider service-slider">
+					{% for item in page.services %}
+					  <div class="multiple-slider-slide">
+					  	<a href="/servicios.html" class="item-link">
+						  	<img src="/assets/images/services/{{item.img}}" alt="{{item.label}}">
+						  	<span class="item-label">{{item.label}}</span>
+					  	</a>
+					  </div>
+					{% endfor %}
+					</div>			
+				</div>
+			</div>
+  	</div>
+	</section>
+	<section class="info-panel left">
+		<div class="row no-gutter row-eq-height">
+			<div class="col-md-6 col-xs-12">
+				<img class="info-img" src="/assets/images/homepage/info-panel.png" alt="info image">
+			</div>
+			<div class="col-md-6 col-xs-12 info-text-cont">
+				<div class="info-cont-center">
+					<div class="info-title clearfix">
+						<svg class="icon" width="30px" height="30px" viewBox="0 0 30 30"><use xlink:href="#check-icon"></use></svg>
+						<h3>Personal Calificado</h3>
+					</div>
+					<div class="info-content">
+						<p>Nuestra familia del Hospital Veterinario San Antonio son personas que aman su trabajo, que dan lo mejor por nuestros pacientes todos los días. Nuestro equipo de trabajo tiene el mismo objetivo; mejorar la salud de su mascota.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include modules/map.html %}
+</div>

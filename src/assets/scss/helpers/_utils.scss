@@ -1,0 +1,57 @@
+
+// Display content as table
+.h-table {
+  width: 100%;
+  display: table;
+  text-align: center;
+
+  > .h-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .h-is-top {
+    vertical-align: top;
+    padding-top: 50px;
+  }
+
+  .h-is-bottom {
+    vertical-align: bottom;
+    padding-bottom: 40px;
+  }
+
+}
+
+// Bootstrap remove gutter
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.rotate-90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.no-scroll{
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.hide {
+  display:none;
+}

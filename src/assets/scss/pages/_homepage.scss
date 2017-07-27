@@ -1,0 +1,21 @@
+//
+// Home Styles
+// --------------------------------------------------
+
+#homepage {
+	.hero-carousel {
+		margin-top: em(-25,14);
+
+		@media (max-width: $screen-xs) {
+			margin-top: 0;
+		}
+	}
+
+	.services {
+		padding-top: em(34,14);
+
+		.main-title {
+			margin-bottom: em(33,14);
+		}
+	}
+}

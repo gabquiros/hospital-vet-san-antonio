@@ -1,0 +1,41 @@
+/*
+The main SCSS file for everything, yep
+*/
+
+
+// Custom Bootstrap
+@import "core/variables";
+@import "vendors/bootstrap/bootstrap";
+@import "vendors/font-awesome/font-awesome";
+
+// Custom Helpers
+@import "helpers/mixins";
+@import "helpers/utils"; 
+
+// Core
+@import "core/fonts";
+@import "core/typo";
+@import "core/global";
+
+// bower:scss
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+// endbower
+
+// Custom Vendors Modules
+@import "vendors/myvendor";
+
+// Custom Modules
+@import "modules/header";
+@import "modules/nav";
+@import "modules/map";
+@import "modules/sliders";
+@import "modules/info-panel";
+@import "modules/footer";
+
+// Pages
+@import "pages/homepage";
+@import "pages/about";
+@import "pages/personel";
+@import "pages/services";
+@import "pages/contact-us";

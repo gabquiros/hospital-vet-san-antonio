@@ -1,0 +1,20 @@
+// Header styles
+.header-top-bar {
+	background-color: $tertiary-theme-color;
+	text-align: center;
+
+	> p {
+		color: $primary-inverted-color;
+		font-family: $secondary-font;
+		font-size: em(12,14);
+		font-weight: bold; 
+		margin: 0;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		padding: em(14,12) 0 em(11,12) 0;
+
+		@media (max-width: $screen-xs) {
+			font-size: em(8,14);
+		}
+	}
+} 

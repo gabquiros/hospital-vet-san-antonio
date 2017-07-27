@@ -1,0 +1,107 @@
+---
+
+layout: default
+title: Servicios
+navActive: 'services' 
+
+services: 
+  - label: 'CONSULTAS<br/>&nbsp;'
+    img: 'consult.png'
+  - label: 'RAYOS X<br/>&nbsp;'
+    img: 'xray.png'
+  - label: 'ULTRASONIDO<br/>&nbsp;'
+    img: 'ultrasound.png'
+  - label: 'LABORAORIO<br/>&nbsp;'
+    img: 'lab.png'
+  - label: 'LIMPIEZAS<br/>DENTALES'
+    img: 'dental.png'
+  - label: 'ENDOSCOPIAS<br/>&nbsp;'
+    img: 'endoscope.png'
+  - label: 'CIRUGÍAS<br/>ELECTIVAS'
+    img: 'surgery.png'
+  - label: 'AISLAMIENTO DE<br/>INFECCIOSOS'
+    img: 'infeccious.png'
+  - label: 'ATENCIÓN DE<br/>EMERGENCIAS'
+    img: 'emergency.png'
+  - label: 'FARMACIA<br/>&nbsp;'
+    img: 'pharmacy.png'
+  - label: 'PETSHOP<br/>&nbsp;'
+    img: 'petshop.png'
+  - label: 'GROOMING<br/>&nbsp;'
+    img: 'grooming.png'
+    link: 'https://www.facebook.com/pg/esteticacaninasanantonio1/about'
+---
+<section class="info-panel left">
+  <div class="row no-gutter row-eq-height">
+    <div class="col-md-6 col-xs-12">
+      <img class="info-img" src="/assets/images/services/instalaciones.jpg" alt="info image">
+    </div>
+    <div class="col-md-6 col-xs-12 info-text-cont">
+      <div class="info-cont-center">
+        <div class="info-title clearfix">
+          <svg class="icon" width="34.548px" height="31.287px" viewBox="0 0 34.548 31.287"><use xlink:href="#building-icon"></use></svg>
+          <h3>INSTALACIONES</h3>
+        </div>
+        <div class="info-content">
+          <p>Estamos ubicados en una propiedad de 4.000m2, con una construcción de 1.200m2. Contamos con salas de espera amplias (una sala de espera de gatos, una sala de espera de perros) con WIFI, baños, televisión, parqueos.<br/>Tenemos 4 consultorios, 3 quirófanos, amplias jaulas para perros, gatos y mascotas no convencionales. Además de jaulas aisladas para el manejo de enfermedades infecciosas.<br/>Además, contamos con zonas verdes donde sacar a pasear a las mascotas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="row">      
+          <div class="col-xs-12">
+            <div class="main-title">
+              <div class="title-icon">
+                <svg class="icon" viewBox="0 0 30 25.81" width="30px" height="25px"><use xlink:href="#service-icon"></use></svg>
+              </div>
+              <h2>Servicios</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          {% for item in page.services %}
+          <div class="col-md-3 col-sm-4 col-xs-6 sr-item">
+            {% if item.link != null %}
+            <a href="{{ item.link }}" target="_blank" class="grooming-link">
+            {% endif %}
+              <div class="service-item">
+                <img src="/assets/images/services/{{ item.img }}" alt="{{ item.label }}">
+                <span class="service-label">{{ item.label }}</span>
+              </div>
+            {% if item.link != null %}  
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>      
+      </div>
+    </div>
+  </div>
+</section>
+<section class="grooming hide">
+  <div class="row no-gutter row-eq-height">
+    <div class="col-md-6 col-xs-12 grooming-text-cont">
+      <div class="grooming-cont">
+        <div class="grooming-logo">
+          <svg class="icon" width="202px" height="202.416px" viewBox="0 0 202 202.416"><use xlink:href="#grooming-logo"></use></svg>
+        </div>
+        <div class="contact-links">
+          <a target="_blank" href="https://www.facebook.com/pg/esteticacaninasanantonio1/about/">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="tel:+50622930254">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 hidden-xs">
+      <img class="grooming-img" src="/assets/images/services/grooming-doggy.jpg" alt="grooming image">
+    </div>    
+  </div>  
+</section>

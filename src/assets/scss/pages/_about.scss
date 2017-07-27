@@ -1,0 +1,106 @@
+.about {
+	.info-panel {
+		margin-top: 0;
+
+		.row-eq-height {
+			@media (max-width: $tablet-breakpoint) {
+				display: block;
+			}		
+		}
+	}
+
+	.mission-vision {
+		.main-title {
+			margin-top: em(80,14);
+			margin-bottom: em(30,14);
+		}
+
+		.ms-text {
+			font-style: italic;
+			font-size: em(20,14);
+			margin-bottom: em(130,20);
+			text-align: center;
+		}
+
+		.mision {
+			.ms-text {
+				@media (max-width: $screen-xs) {
+					margin-bottom: em(30,20);
+				}
+			}
+		}		
+	}
+
+	.slogan {
+		p {
+			color: #ffffff;
+			font-style: italic;
+		}
+
+		.slogan-container {
+			background: url(../images/about/slogan-bg.jpg) no-repeat 0 0;
+			background-size: cover;
+			
+			@media (max-width: $tablet-breakpoint) {
+				padding-top: 20%;
+		    padding-bottom: 20%;
+		    background-size: initial;
+			}			
+		}
+
+		.slogan-text-container {
+			text-align: center;
+			width: 25%;
+	    margin-top: 7%;
+	    margin-bottom: 17%;
+	    margin-left: 10%;	
+
+	    @media (max-width: $tablet-breakpoint) {
+	    	width: 80%;
+	    	margin: 0 auto;
+	    }		
+		}
+
+		.slogan-pretext {
+			font-size: em(20,14);
+		}
+
+		.slogan-text {
+			font-size: em(30,14);
+		}
+	}
+
+	.values {
+		padding-top: em(34,14);
+		margin-bottom: em(100,14);
+
+		.main-title {
+			margin-bottom: em(55,14);
+		}
+
+		.value-item {
+			img {
+				border-radius: 60px 0;
+				margin-bottom: em(20,14);
+				width: 100%;
+			}
+		}
+
+		.value-item-text {
+			h4 {
+				text-transform: uppercase;
+				margin-bottom: em(10,20);
+			}
+
+			p {
+				font-size: em(16,14);
+			}
+		}
+	}
+
+	.row-eq-height {
+		@media (max-width: $screen-xs) {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,95 @@
+.info-panel {
+	margin-top: em(35,14);
+
+	.info-img {
+		width: 100%;
+	}
+
+	.info-cont-center {
+		position: absolute;
+		top: 20%;
+
+		@media (max-width: 1200px) {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		@media (max-width: 1200px) {
+			font-size: 90%;
+		}
+
+		@media (max-width: 980px) {
+			font-size: 80%;
+		}
+
+		@media (max-width: 850px) {
+			font-size: 70%;
+		}
+
+		@media (max-width: $tablet-breakpoint) {
+			font-size: 100%;
+			position: relative;
+			transform: translateY(0);
+		}
+	}
+
+	.info-text-cont {
+		position: relative;
+		background-color: $primary-theme-color;
+	}
+
+	.info-content {
+		padding: em(30,14) 20% 0 17%;
+
+		@media (max-width: $tablet-breakpoint) {
+			padding: em(22,14);			
+		}
+
+		p {
+			color: #ffffff;
+			font-size: em(20,14);
+			line-height: 1.2em;
+
+			@media (max-width: $tablet-breakpoint) {
+				font-size: em(16,14);
+			}
+		}
+	}
+
+	.info-title {
+		background-color: $secondary-theme-color; 
+		padding: em(10,14) 0;
+		position: relative;
+		left: -10%;
+		width: 90%;
+
+		.icon {
+			float: left;
+			margin-top: em(3,14);
+			margin-left: em(20,14);
+		}
+
+		h3 {
+			color: #ffffff;
+			float: left;
+			position: absolute;
+			left: 30%;
+			@media (max-width: $tablet-breakpoint) {
+				position: static;
+				margin-left: 5%;
+				font-size: em(27,14);
+			}
+		}
+
+		@media (max-width: $tablet-breakpoint) {
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.row-eq-height {
+		@media (max-width: $tablet-breakpoint) {
+			display: block;
+		}
+	}
+}
