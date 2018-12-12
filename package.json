@@ -9,8 +9,8 @@
   },
   "scripts": {
     "start": "node_modules/.bin/gulp",
-    "build" : "node_modules/.bin/gulp build",
-    "copy" : "node_modules/.bin/gulp copy-backend"
+    "build": "node_modules/.bin/gulp build",
+    "copy": "node_modules/.bin/gulp copy-backend"
   },
   "devDependencies": {
     "autoprefixer": "^6.2.3",
@@ -51,7 +51,7 @@
     "gulp-util": "^3.0.7",
     "node-notifier": "^4.5.0",
     "shelljs": "^0.6.0",
-    "vinyl-source-stream": "^1.1.0",
+    "vinyl-source-stream": "^2.2.0",
     "wiredep": "^3.0.0",
     "yargs": "^3.31.0"
   }
